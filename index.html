@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ma première page html</title>
+    <meta name="description" content="c'est ma premiere page html en suivant les cours epita">
+        <style>
+            /*je mets mon css*/
+            label,input,textarea,select{
+                display: block;
+            }
+            div{
+                color:white;
+                background: blue;
+                padding: 20px;
+                margin: 100px;
+            }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+        <a href="">lien 1</a>
+        <a href="">lien 2</a>
+        <a href="">lien 3</a>
+    </nav>
+
+        <h1>Super titre 1</h1> 
+    </header>
+    
+    <main>
+        <p>ceci est un pragraphe</p>
+
+        <!-- liste non ordonnée -->
+        <ul>
+            <!-- items de la liste -->
+            <li>1er item</li>
+            <li>2ème item</li>
+            <li>3ème item</li>
+
+        </ul>
+
+        <!-- liste ordonnée -->
+        <ol>
+            <li>Jérôme</li>
+            <li>Julie</li>
+            <li>Laurent</li>
+            <ol>
+                <li>Yann</li>
+                <li>Sébastien</li>
+            </ol>
+        </ol>
+
+        <!-- pour insérer une image dans une page -->
+        <!--alt : -->
+            <!-- remplace le logo si le téléchargement ne marche pas, --> 
+            <!-- est lu en survol pour les mamentendants -->
+            <!-- pour le référencement -->
+
+        <img src="html-logo.jpg" alt="logo HTML5"  width="100">
+
+        <!-- <a> : lien hypertexte -->
+            <!-- target=" " : ouvre un nouvel onglet -->
+            <!-- title : pour bulle d'aide -->
+
+        <!-- pour insérer des liens -->
+        <p>
+            ceci est un texte 
+            <a  title="plus d'info sur l'école" 
+                target=" " 
+                href="https://epita.fr">
+                je suis un lien vers la page epita.fr
+            </a>
+    </p>
+
+    <!-- balise sémantiques utilisés aussi pour l'accessibilité et moteurs de recherche  -->
+        <!--<em> : emphase  -->
+        <!--<strong> : très important -->
+    <p>
+        le mot qui suit est <em>important</em>
+
+    </p>
+    <p>
+        le mot qui suit est <strong> très important</strong>
+
+    </p>
+
+    <!-- balises visuelles / non sémantiques  -->
+         <!--<i> : emphase  -->
+         <!--<b> : gras (bold)  -->
+       
+     <p>
+        le mot qui suit est <i>en italique</i> et ce mot est en <b>gras</b>
+    </p>
+
+    <!-- balises table  -->
+         <!--<table : table  -->
+             <!-- <thead> : ligne entete -->
+                <!--<tr> : gdéfinition de la ligne  -->
+                <!-- <tr> : définition d'un champs de la ligne -->
+            <!-- <body> -->
+                <!--<tr> : gdéfinition de la ligne  -->
+                <!-- <tr> : définition d'un champs de la ligne -->
+
+    <hr>
+    <h2>parapgraphe table</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>prénom</td>
+                <td>email</td>
+                <td>âge</td>
+            </tr> 
+        </thead>
+        <body>
+
+            <tr>
+                <td>fred</td>
+                <td>fred@gmail.com</td>
+                <td>42 ans</td>
+            </tr>
+            <tr>
+                <td>lolo</td>
+                <td>lolo@gmail.com</td>
+                <td>32 ans</td>
+            </tr>
+        </body>
+    </table>
+
+    <hr>
+    <h2>la balise form</h2>
+    <!-- formulaire  -->
+    <!-- form method=" post" action="..." -->
+    <form>
+        <label> votre nom</label>
+        <input name="name" value="lolo" type="text">
+        <label> votre téléphone</label>
+        <input name="phone" type="phone">
+        <label> votre message</label>
+        <textarea name="msg" placeholder="saisissez votre message"></textarea>
+        <label> votre complement de message</label>
+        <textarea name="complement" rows="03"></textarea>
+        <label> votre choix</label>
+        <select>
+            <option>oui</option>
+            <option>non</option>
+            <option>peut-être</option>
+        </select>
+
+        <button>envoyer</button>
+
+    </form>
+<hr>
+    <!-- les balises <div> & <spane> : balises non semantiques (n'apportent pas de sens au contenu)-->
+        <!-- ces balises permettent d'encapsuler du contenu dans des vlocs pour dfes raison de placement dans l'espace de la pafz ou pour des ra&isons de style CSS cosmétique -->
+        <p>je suis en texte <spane style="color:blue">bleu</spane></p>
+        <div style="color:#0000ff;background-color: turquoise;padding: 40px">je suis une div</div>
+        <div >fin du contenu principal de la page</div>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
