@@ -1,0 +1,37 @@
+/* Selecteur par nom de balise */
+p{
+    color:red
+}
+
+/* sélecteur par nom d'id */
+#first{
+    color: green;
+}
+
+
+/* sélecteur sur l'objet + class */
+h1.valid{
+    color: blue;
+
+}
+
+/* selecteur sur la class  */
+.bkg{
+    background: red;
+}
+
+/* on cible les sélecteurs parents enfants*/
+div h2 {
+    color: grey;
+}
+
+/* on cible la balise h2 qui suit h1 */
+h1+h2 {
+    color: orange
+}
+
+div {
+    width: 30;
+    display: inline-block;
+    background: #eee;
+}
