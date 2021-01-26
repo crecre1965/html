@@ -1,0 +1,171 @@
+@import 'reset.css';
+
+body{
+    font-family:'Roboto Slab',serif;
+    font-size: 16px;
+    color:#684f53;
+    background: #f2f2f2;
+    line-height: 1.8;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: #a4243d;
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+ h2 em, h3 em{
+    color: tomato;
+}
+
+h3{
+    font-size: 1.7rem;
+    color: #a4243d;
+}
+
+a{
+    color: #a4243d;
+}
+
+p{
+    font-size: 1.5rem ;
+    color:#684f53;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container{
+    width: 1200px;
+    margin:0 auto;
+      
+}
+
+/*  ================> image du header <====================================== */
+header img{
+    width: 100%;
+}
+/* =================> barre de navigation <================================= */
+nav{
+    background: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20 px;
+}
+
+/* =================> liens de la barre de navigation <=====================  */
+nav .navlink {
+        display: flex;
+        justify-content: space-between;
+}
+
+nav .navlink a{
+  
+    font-size: 2em;  
+    text-decoration: none;
+    margin:0 15px; 
+ }
+nav .navlink a:hover{
+    background-color: #f45d54;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ==================> session mootobikes <============================*/
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  section hr{
+    border-top: 4px solid #a4243d;
+     
+  }
+
+div.card{
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div.card img{
+    width: 100%;
+}
+
+div.card hr{
+    border-top: 2px solid #a4243d;
+}
+
+
+.section-about div{
+    width:49%;
+}
+.section-about div div.icons{
+    width: 100%;
+    justify-content: space-around;
+}
+.section-about video{
+    width:100%
+}
+.section-about i.fab{
+    font-size: 70px;
+    color: tomato;
+}
+div.icons i:hover{
+    cursor: pointer;
+    color:red;
+    transform:scale(2);
+}
+footer{
+    background: rgb(112, 6, 112);
+    padding-bottom: 70px;
+    padding-top:50px;
+    text-align: center;
+}
+footer p{
+    color:white;
+}
+.nav-footer{
+    justify-content: center;
+}
+.nav-footer a{
+    color:#fff;
+    margin-left: 10px; 
+    margin-right:10px;
+    transition: 1s;
+}
+
+.nav-footer a:hover{
+    /* color: #c8a3cf; */
+    color:black
+}
+
+div#hero{
+    background:chocolate; 
+    background-image: url('../img/images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -500px;
+    background-size: cover;
+    height: 300px;
+    /* filter: sepia(); */
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    }
+
+    div#hero h1{
+        color:white;
+    }
+
+  
